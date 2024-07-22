@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="Portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>ARTtist</p>
+                <h1>Hi, I'm <span>BENEDICT</span> <br>Student from BSIT</h1>
+            </div>
+            <div class="Profile">
+                <img src="Bene.png">
+            </div>
+        </div>
+    </div>
+
+
+
+
+<!-- ABOUT----------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col1">
+                <img src="About-img.png">
+            </div>
+            <div class="about-col2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am currently studying at the Dalubhasaan ng Lungsod ng Lucena <br>
+                    taking course of Bachelor of Science
+                    in Information Technology.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Educational Background</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>2010 - 2016</span><br>Lucena West II Elem. School</li>
+                        <li><span>2016 - 2020</span><br>Quezon National High School</li>
+                        <li><span>2020 - 2022</span><br>St. Agustine School of Nursing</li>
+                        <li><span>2022 - Current</span><br>Dalubhaasan ng Lungsod ng Lucena</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Art</span><br>Sketching/Drawing</li>
+                        <li><span>Music</span><br>Singer</li>
+                        <li><span>UI/UX</span><br>Web Interface Designer</li>
+                        <li><span>Editor</span><br>Photo Editor</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- WORKS ----------- -->
+ <div id="works">
+    <div class="container">
+        <h1 class="sub-title">My Artworks</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Artwork1.png">
+                <div class="layer">
+                    <h3>Brader</h3><br>
+                    <p>This Artwork was dedicated to my bestfriend who's now serving as
+                        full time missionary at Cagayan De Oro Mission.</p>
+                    <a href="#"><i class="fa-solid fa-eye"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Artwork2.png">
+                <div class="layer">
+                    <h3>Infected Mushroom</h3><br>
+                    <p>A captivating contemporary artwork featuring a fantastical mushroom that blends 
+                        a organic and psychedelic elements.</p>
+                    <a href="#"><i class="fa-solid fa-eye"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Artwork3.png">
+                <div class="layer">
+                    <h3>Deadly Burger</h3><br>
+                    <p>A menacing yet whimsical appearance, blending elements of humor and
+                        horror to create a visually striking and playful image.</p>
+                    <a href="#"><i class="fa-solid fa-eye"></i></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+ </div>
+
+
+<!-- CONTACTS ----------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>quijano.jb23@gmail.com</p>
+                <p><i class="fa-solid fa-mobile-screen-button"></i>09234567890</p>
+                <div class="soc-med">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">   Copyright © 2024 | All Rights Reserved</div>
+ </div>
+<script src="Portfolio.js"></script>
+</body>
+</html>
